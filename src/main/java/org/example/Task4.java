@@ -17,7 +17,7 @@ public class Task4 {
             System.out.println("Выбирете: " + "К-камень " + "Н-ножницы " + "Б-бумага");
             String input = new Scanner(System.in).nextLine();
 
-            int [] array = processing(input);
+            int[] array = processing(input);
             userPoints = userPoints + array[0];
             machinePoints = machinePoints + array[1];
         }
@@ -31,7 +31,7 @@ public class Task4 {
         if (userPoints < machinePoints) {
             System.out.println("Вы проиграли");
         }
-        if (userPoints == machinePoints){
+        if (userPoints == machinePoints) {
             System.out.println("У вас ничья");
         }
     }
